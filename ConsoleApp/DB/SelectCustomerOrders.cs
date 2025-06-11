@@ -32,7 +32,6 @@ namespace ConsoleApp.DB
             }
             catch (Exception)
             {
-
                 throw;
             }
         }

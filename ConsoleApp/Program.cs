@@ -40,7 +40,7 @@ namespace ConsoleApp
                 await SimpleQueryTest.Tests(connection);
 
                 
-                //Parameterized sql query
+                //Parameterized sql query 
                 await ParameterizedQueryTest.Tests(connection);
 
 
