@@ -1,4 +1,5 @@
-﻿using ConsoleApp.Model;
+﻿using ConsoleApp.DB;
+using ConsoleApp.Model;
 using Npgsql;
 using System;
 using System.Collections.Generic;

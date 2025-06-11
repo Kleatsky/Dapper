@@ -37,17 +37,17 @@ namespace ConsoleApp
             using (var connection = new NpgsqlConnection(connectionString))
             {
                 //Siple sql query
-                //await SimpleQueryTest.Tests(connection);
+                await SimpleQueryTest.Tests(connection);
 
                 
-
                 //Parameterized sql query
                 await ParameterizedQueryTest.Tests(connection);
 
 
-
+                //Join sql query
+                await JoinQuery.JoinAsync(connection);
             }
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Program complite.");
         }
     }
 }

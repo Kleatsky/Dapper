@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using Dapper;
 using Npgsql;
 
-namespace ConsoleApp
+namespace ConsoleApp.DB
 {
     internal class SelectFromDB
     {
@@ -19,7 +19,7 @@ namespace ConsoleApp
             try
             {
                 var customers = await connection.QueryAsync<Customers>(query);
-                return customers.ToList<Customers>();
+                return customers.ToList();
             }
             catch (Exception)
             {
@@ -33,7 +33,7 @@ namespace ConsoleApp
             try
             {
                 var products = await connection.QueryAsync<Products>(query);
-                return products.ToList<Products>();
+                return products.ToList();
             }
             catch (Exception)
             {
@@ -47,7 +47,7 @@ namespace ConsoleApp
             try
             {
                 var orders = await connection.QueryAsync<Orders>(query);
-                return orders.ToList<Orders>();
+                return orders.ToList();
             }
             catch (Exception)
             {

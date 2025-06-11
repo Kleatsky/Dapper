@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace ConsoleApp
+namespace ConsoleApp.DB
 {
     internal class InsertToDB
     {
